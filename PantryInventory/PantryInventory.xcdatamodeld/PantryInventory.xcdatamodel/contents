@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D56" minimumToolsVersion="1.0">
+    <entity name="Item" representedClassName="Item">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO" default="random"/>
+        <attribute name="itemName" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="quantity" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="quantityType" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="storageLocation" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="category" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="expirationDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="purchaseDate" attributeType="Date" usesScalarValueType="NO" optional="YES"/>
+        <attribute name="itemPhoto" attributeType="Binary" usesScalarValueType="NO" optional="YES"/>
+        <attribute name="notes" attributeType="String" usesScalarValueType="NO" optional="YES"/>
+        <attribute name="lowStockAlert" attributeType="Boolean" usesScalarValueType="YES" default="NO"/>
+        <attribute name="lowStockThreshold" attributeType="Double" usesScalarValueType="YES" default="0"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" default="now"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="0" positionY="0" width="128" height="228"/>
+    </elements>
+</model>
