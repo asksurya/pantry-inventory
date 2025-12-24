@@ -36,8 +36,14 @@ class InventoryViewModel: ObservableObject {
         }
     }
 
-    func fetchItems() {
+    func makeFetchRequest() -> NSFetchRequest<Item> {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
+        request.fetchBatchSize = 20
+        return request
+    }
+
+    func fetchItems() {
+        let request = makeFetchRequest()
 
         do {
             items = try viewContext.fetch(request)
